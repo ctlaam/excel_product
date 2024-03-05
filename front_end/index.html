@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From create Product</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="toast"></div>
+    <div class="main-content">
+      <div class="title">
+        <h1 class="title-form">Form create producut</h1>
+      </div>
+      <div class="container-form">
+        <form id="form-product" action="" method="POST">
+          <div class="row-form">
+            <div class="col-form">
+              <label for="codeproduct" class="title-item-form">
+                Code product <span style="color: red">*</span>
+              </label>
+              <input
+                type="text"
+                name="codeproduct"
+                id="codeproduct"
+                placeholder="PRD1111"
+                class="input-item-form"
+              />
+            </div>
+            <div class="col-form">
+              <label for="nameproduct" class="title-item-form">
+                Name product <span style="color: red">*</span>
+              </label>
+              <input
+                type="text"
+                name="nameproduct"
+                id="nameproduct"
+                placeholder="Name test product"
+                class="input-item-form"
+              />
+            </div>
+          </div>
+
+          <div class="row-form">
+            <div class="col-form time">
+              <label for="datetime" class="title-item-form"> Time </label>
+              <input
+                type="datetime-local"
+                name="datetime"
+                id="datetime"
+                class="input-item-form"
+              />
+            </div>
+          </div>
+          <div>
+            <label for="description" class="title-item-form"> Description </label>
+            <textarea
+              rows="6"
+              name="description"
+              id="description"
+              placeholder="Type your description"
+              class="input-item-form"
+            ></textarea>
+          </div>
+
+          <button class="btn-submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
